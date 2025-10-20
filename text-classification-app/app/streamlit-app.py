@@ -1,5 +1,5 @@
 import streamlit as st
-from app.model import Predictor
+from model import Predictor
 
 @st.cache_resource
 def load_model():
@@ -20,3 +20,4 @@ if st.button("Predict"):
         st.success(f"**Predicted label:** {label}")
     else:
         st.warning("Please enter some text.")
+
